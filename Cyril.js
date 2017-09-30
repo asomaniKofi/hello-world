@@ -1,1 +1,1 @@
-console.log("The names bar, foo bar");
+console.log("The names bar, foo bar bar");
