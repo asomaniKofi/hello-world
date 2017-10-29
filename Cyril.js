@@ -32,21 +32,83 @@ typeof twin; //An operator which returns the type of argument. Ask Sam for a pos
 //I had a pseudosolution to a Java problem that I just wanted to see what it would look like in code form.
 let fee = false;
 // fee = true
-while(fee = true){
-    let i = 0;
-     i++;
-    if(i = 3){
-        let price = i;
-        console.log("Charge: £" + price);
-        fee=false;
-    }
+let year = prompt('Hour Entered');
+let left = prompt('Hour left');
+let charge = left - year;
+if(charge == 1 || charge == -1){
+    console.log("Ticket £3")
+}
 
+if(charge == 2 || charge == -2){
+    console.log("Ticket £6")
 }
-if(i > 3){
-    price++;
-    console.log("Charge: £" + price);
+if(charge == 3 || charge == -3){
+    console.log("Ticket £9")
 }
-if(i > 24){
-    console.log("Maximum Charge: £30");
-    fee = false;
+if(charge == 4 || charge == -4){
+    console.log("Ticket £10")
 }
+if(charge == 5 || charge == -5){
+    console.log("Ticket £11")
+}
+if(charge == 6 || charge == -6){
+    console.log("Ticket £12")
+}
+if(charge == 7 || charge == -7){
+    console.log("Ticket £13")
+}
+if(charge == 8 || charge == -8){
+    console.log("Ticket £14")
+}
+if(charge == 9 || charge == -9){
+    console.log("Ticket £15")
+}
+if(charge == 10 || charge == -10){
+    console.log("Ticket £16")
+}
+if(charge == 11 || charge == -11){
+    console.log("Ticket £17")
+}
+if(charge == 12 || charge == -12){
+    console.log("Ticket £18")
+}
+if(charge == 13 || charge == -13){
+    console.log("Ticket £19")
+}
+if(charge == 14 || charge == -14){
+    console.log("Ticket £20")
+}
+if(charge == 15 || charge == -15){
+    console.log("Ticket £21")
+}
+if(charge == 16 || charge == -16){
+    console.log("Ticket £22")
+}
+if(charge == 17 || charge == -17){
+    console.log("Ticket £23")
+}
+if(charge == 18 || charge == -18){
+    console.log("Ticket £24")
+}
+if(charge == 19 || charge == -19){
+    console.log("Ticket £25")
+}
+if(charge == 20 || charge == -20){
+    console.log("Ticket £26")
+}
+if(charge == 21 || charge == -13){
+    console.log("Ticket £27")
+}
+if(charge == 22 || charge == -13){
+    console.log("Ticket £28")
+}
+if(charge == 23 || charge == -13){
+    console.log("Ticket £29")
+}
+if(charge == 24 || charge == -24){
+    console.log("Ticket £30")
+}
+
+
+
+
