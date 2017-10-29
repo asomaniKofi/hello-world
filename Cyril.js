@@ -2,7 +2,7 @@
 The string is required for backwards compatiability for older programs
 */
 console.log("The names bar, foo bar bar"); 
-let a = "new foobar";
+const a = "new foobar";
 let twin = 25;
 /*
 The line below details 3 js variables that have been assigned data on the same line
@@ -30,7 +30,7 @@ typeof twin; //An operator which returns the type of argument. Ask Sam for a pos
 //I had a pseudosolution to a Java problem that I just wanted to see what it would look like in code form.
 let fee = false;
 // fee = true
-let setTicket = () => {
+const setTicket = () => {
 let year = prompt('Hour Entered');
 let left = prompt('Hour left');
 let charge = left - year;
@@ -39,31 +39,31 @@ if(charge == 1 || charge == -1){
 }
 
 if(charge == 2 || charge == -2){
-    console.log("Ticket £6")
+    console.log("Ticket £6");
 }
 if(charge == 3 || charge == -3){
-    console.log("Ticket £9")
+    console.log("Ticket £9");
 }
 if(charge == 4 || charge == -4){
-    console.log("Ticket £10")
+    console.log("Ticket £10");
 }
 if(charge == 5 || charge == -5){
-    console.log("Ticket £11")
+    console.log("Ticket £11");
 }
 if(charge == 6 || charge == -6){
-    console.log("Ticket £12")
+    console.log("Ticket £12");
 }
 if(charge == 7 || charge == -7){
-    console.log("Ticket £13")
+    console.log("Ticket £13");
 }
 if(charge == 8 || charge == -8){
-    console.log("Ticket £14")
+    console.log("Ticket £14");
 }
 if(charge == 9 || charge == -9){
-    console.log("Ticket £15")
+    console.log("Ticket £15");
 }
 if(charge == 10 || charge == -10){
-    console.log("Ticket £16")
+    console.log("Ticket £16");
 }
 if(charge == 11 || charge == -11){
     console.log("Ticket £17")
