@@ -31,8 +31,8 @@ typeof twin; //An operator which returns the type of argument. Ask Sam for a pos
 let fee = false;
 // fee = true
 const setTicket = () => {
-let year = prompt('Hour Entered');
-let left = prompt('Hour left');
+let year = window.prompt('Hour Entered');
+let left = window.prompt('Hour Entered');
 let charge = left - year;
 if(charge == 1 || charge == -1){
     console.log("Ticket £3")
@@ -107,7 +107,8 @@ if(charge == 23 || charge == -13){
 if(charge == 24 || charge == -24){
     console.log("Ticket £30")
 }
-}();
+}
+setTicket();
 
 
 
