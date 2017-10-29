@@ -4,8 +4,6 @@ The string is required for backwards compatiability for older programs
 console.log("The names bar, foo bar bar"); 
 let a = "new foobar";
 let twin = 25;
-
-
 /*
 The line below details 3 js variables that have been assigned data on the same line
 It would be a better practice to assign variables on various lines to increase readability
@@ -32,6 +30,7 @@ typeof twin; //An operator which returns the type of argument. Ask Sam for a pos
 //I had a pseudosolution to a Java problem that I just wanted to see what it would look like in code form.
 let fee = false;
 // fee = true
+let setTicket = () => {
 let year = prompt('Hour Entered');
 let left = prompt('Hour left');
 let charge = left - year;
@@ -108,7 +107,7 @@ if(charge == 23 || charge == -13){
 if(charge == 24 || charge == -24){
     console.log("Ticket £30")
 }
-
+}();
 
 
 
