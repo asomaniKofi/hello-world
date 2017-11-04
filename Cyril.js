@@ -30,25 +30,81 @@ typeof twin; //An operator which returns the type of argument. Ask Sam for a pos
 //I had a pseudosolution to a Java problem that I just wanted to see what it would look like in code form.
 let fee = false;
 // fee = true
-
 let Vehicle = prompt("Enter type of Vehicle: ");
 let ID = prompt("ID Plate: ");
 let brand = prompt("Brand: ");
 let driver ={
     VehicleType:Vehicle,
-    VehicleID: ID,
+    VehicleID: ,
     VehicleBrand: brand
+getID: function(){
+    return VehicleID;
+}
+getBrand: function(){
+    return VehicleBrand;
+}
 }
 console.log(driver);
 alert(VehicleType in driver)
 
+let codes = {
+  "+49": "Germany",
+  "+41": "Switzerland",
+  "+44": "Great Britain",
+  // ..,
+  "+1": "USA"
+};
 
+for(let code in codes) {
+  alert( +code ); // 49, 41, 44, 1
+}
+let user = { name: "John" };
 
+let permissions1 = { canView: true };
+let permissions2 = { canEdit: true };
 
+// copies all properties from permissions1 and permissions2 into user
+Object.assign(user, permissions1, permissions2);
 
+let json = '{ "age": 30 }'; // incomplete data
 
+try {
 
+  let user = JSON.parse(json); // <-- no errors
 
+  if (!user.name) {
+    throw new SyntaxError("Incomplete data: no name"); // (*)
+  }
+
+  alert( user.name );
+
+} catch(e) {
+  alert( "JSON Error: " + e.message ); // JSON Error: Incomplete data: no name
+}
+let num = +prompt("Enter a positive integer number?", 35)
+
+let diff, result;
+
+function fib(n) {
+  if (n < 0 || Math.trunc(n) != n) {
+    throw new Error("Must not be negative, and also an integer.");
+  }
+  return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+}
+
+let start = Date.now();
+
+try {
+  result = fib(num);
+} catch (e) {
+  result = 0;
+} finally {
+  diff = Date.now() - start;
+}
+
+alert(result || "error occured");
+
+alert( `execution took ${diff}ms` );
 
 
 
