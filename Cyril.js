@@ -30,6 +30,34 @@ typeof twin; //An operator which returns the type of argument. Ask Sam for a pos
 //I had a pseudosolution to a Java problem that I just wanted to see what it would look like in code form.
 let fee = false;
 // fee = true
+
+let Vehicle = prompt("Enter type of Vehicle: ");
+let ID = prompt("ID Plate: ");
+let brand = prompt("Brand: ");
+let driver ={
+    VehicleType:Vehicle,
+    VehicleID: ID,
+    VehicleBrand: brand
+}
+console.log(driver);
+alert(VehicleType in driver)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const setTicket = () => {
 let year = window.prompt('Hour Entered');
 let left = window.prompt('Hour Entered');
@@ -109,6 +137,12 @@ if(charge == 24 || charge == -24){
 }
 }
 setTicket();
-
+let user = {
+    Vehicle: "Van",
+    ID: 2314,
+    Brand: "Ford Transit",
+    Status:"Parked"
+}
+delete user.Status;
 
 
