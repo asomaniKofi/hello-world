@@ -1,22 +1,22 @@
 "use strict" /*Placing this string at the top of the document changes the engine to Modern Mode thus changing the feautures of som built in-features.
 The string is required for backwards compatiability for older programs
 */
-let Vehicle = prompt("Enter type of Vehicle: ");
-let ID = prompt("ID Plate: ");
-let brand = prompt("Brand: ");
-let driver ={
-    VehicleType:Vehicle,
-    VehicleID: ,
-    VehicleBrand: brand
-getID: function(){
-    return VehicleID;
-}
-getBrand: function(){
-    return VehicleBrand;
-}
-}
-console.log(driver);
-alert(VehicleType in driver)
+//let Vehicle = prompt("Enter type of Vehicle: ");
+//let ID = prompt("ID Plate: ");
+//let brand = prompt("Brand: ");
+//let driver ={
+//    VehicleType:Vehicle,
+//    VehicleID: ,
+//    VehicleBrand: brand
+//getID: function(){
+//    return VehicleID;
+//}
+//getBrand: function(){
+//    return VehicleBrand;
+//}
+//}
+//console.log(driver);
+//alert(VehicleType in driver);
 
 let codes = {
   "+49": "Germany",
@@ -163,13 +163,34 @@ if(charge == 24 || charge == -24){
     console.log("Ticket £30")
 }
 }
-setTicket();
-let user = {
-    Vehicle: "Van",
-    ID: 2314,
-    Brand: "Ford Transit",
-    Status:"Parked"
-}
+//let user = {
+//    Vehicle: "Van",
+//    ID: 2314,
+//    Brand: "Ford Transit",
+//    Status:"Parked"
+//}
 delete user.Status;
 
+let vehicle= [{
+    ID: "2314",
+    Type: "Car",
+    Brand:"Audi",
+    DateOfEntry:"12/11/2017" 
+},
+              {
+ID: "1234",              
+Type: "Van",
+Brand:"Ford Transit",
+DateOfEntry:"13/11/2017" 
+              },
+{
+    ID:"7412",
+    Type:"MotorBike",
+    Brand:"Yamaha",
+    DateOfEntry:"14/11/2017" 
+}];
 
+vehicle.sort(function(v1,v2){
+        return v1.DateOfEntry < v2.DateOfEntry;
+
+});
