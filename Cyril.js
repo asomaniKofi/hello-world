@@ -26,9 +26,9 @@ let codes = {
   "+1": "USA"
 };
 
-for(let code in codes) {
-  alert( +code ); // 49, 41, 44, 1
-}
+// for(let code in codes) {
+//   alert( +code ); // 49, 41, 44, 1
+// }
 let user = { name: "John" };
 
 let permissions1 = { canView: true };
@@ -89,23 +89,23 @@ const setTicket = () => {
 let year = window.prompt('Hour Entered');
 let left = window.prompt('Hour Entered');
 let charge = left - year;
-if(charge == 1 || charge == -1){
+if(charge === 1 || charge === -1){
     console.log("Ticket £3")
 }
 
-if(charge == 2 || charge == -2){
+if(charge === 2 || charge === -2){
     console.log("Ticket £6");
 }
-if(charge == 3 || charge == -3){
+if(charge === 3 || charge === -3){
     console.log("Ticket £9");
 }
-if(charge == 4 || charge == -4){
+if(charge === 4 || charge === -4){
     console.log("Ticket £10");
 }
-if(charge == 5 || charge == -5){
+if(charge === 5 || charge === -5){
     console.log("Ticket £11");
 }
-if(charge == 6 || charge == -6){
+if(charge === 6 || charge == -6){
     console.log("Ticket £12");
 }
 if(charge == 7 || charge == -7){
